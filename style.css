@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#css-zen-garden {
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+
+[role=banner] {
+    background: url(../img/huntington.png) no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    height: 250px;
+    padding: 20px 0 70px 0;    
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+
+
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}
+h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', sans-serif;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+h3 {
+    margin: 1em auto;
+    width: 80%;
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    display: block;
+    line-height: 2;
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.summary, .preamble {
+    padding-top: 30px;
+    /* width: 80%; */
+    margin: auto;
+}
+
+.supporting {
+    padding-top: 30px;
+    /* width: 80%; */
+    margin: auto;
+}
+
+.participation {
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.participation, .benefits {
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(../img/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+
+p[role="contentinfo"] {
+    width: auto;
+    padding: 15px 100px;
+    margin: 0;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    background: #3e5d67;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(../img/koi.jpg)
+}
+
+footer {
+    display: block;
+    padding: 5%;
+    background: #134347;
+    font-size: 40px;
+    text-align: center;
+}
+
+.fab {
+    background-color: #134347;
+    border-radius: 60%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+        
+a:link { 
+    color:#0d8ba1;
+    text-decoration: none;
+}    
+a:visited { 
+    color: #1a5952;
+}
+
+abbr {
+	border-bottom: none;
+}
+    
+p[role="contentinfo"] > a:link {
+    color: rgba(255, 255, 255, 0.7);
+}
+p[role="contentinfo"] > a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer a:link {
+    color: rgba(255, 255, 255, 0.5);
+}
+footer a:visited { 
+    color: rgba(255, 255, 255, 0.2);
+}
+footer a:hover, a:focus, a:active {
+    color: #315050;
+}
+
+.sidebar {
+    background-color: #edf4f0;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0;
+
+}
+
+ul {
+    column-count: 2;
+    column-gap: 0;
+    border-bottom: black;
+    padding-left: 0;
+    height: 100%;
+    font-style: italic;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 12px;
+    list-style-type: none;
+    color: rgba(50, 80, 80, 0.6);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+li {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 20px 10px 10px 10px;
+}
+
+.design-name {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.design-name, .designer-name {
+    font-style: normal;
+}
+
+.design-selection {
+    margin: 0;
+}
+
+a .design-selection, .design-name {
+    font-style: normal;
+    display: block;
+
+}
+
+.designer-name {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.sidebar a:link { 
+    color: #325050;
+    text-decoration: none;
+}    
+.sidebar a:visited { 
+    color: #325050;;
+}
+
+.design-archives, .zen-resources {
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(../img/bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+
+.zen-resources ul {
+    font-style: normal;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+}
+
+.design-archives ul {
+    font-style: normal;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+
+}
+
+.select {
+    display: none;
+}
+.archives {
+    display: none;
+}
+.resources {
+    display: none;
+}
